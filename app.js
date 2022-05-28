@@ -1,9 +1,8 @@
-let userName = prompt("What is your name?");
-console.log(userName);
-document.write("Hello " + userName);
+let firstName = "";
+let age = prompt("How old are you?");
 
-function myFunction() {
-  
-  confirm("Click OK if your positive POSITIVE");
-  
+function askName() {
+    firstName = prompt("What is your first name?");
+    console.log(firstName);
+    document.write("Hello " + firstName + ", how goes it?");
 }
