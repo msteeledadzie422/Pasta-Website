@@ -14,3 +14,5 @@ function ratePage(){
         document.write("<img class='star-pic' src='star.jpeg' />");
     }
       }
+
+ratePage()
