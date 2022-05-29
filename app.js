@@ -15,4 +15,4 @@ function ratePage(){
     }
       }
 
-ratePage()
+ratePage();
