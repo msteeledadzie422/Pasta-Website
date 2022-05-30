@@ -19,7 +19,7 @@ function ratePage(){
         document.write("<img class='star-pic' src='star.jpeg' />");
     }
       
-    else (userRating>5) {
+    else if (userRating>5) {
       message = "Sorry, we only accept ratings up to 5, but we appreciate your enthusiasm!";
       alert(message);
     }
