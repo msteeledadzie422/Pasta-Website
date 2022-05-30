@@ -12,7 +12,7 @@ function ratePage(){
     let userRating = prompt("How many stars would you rate my page? 1-5");
     if (userRating<=5 && userRating >=1) {
       let message = "";
-      message = "Thank you for helping us to improve our service - your rating is appreciated";
+      message = "Thank you for helping us to improve our service - your rating is appreciated!";
       alert(message);
       for (let i = 1; i <= userRating; i++) {
         document.write("<img class='star-pic' src='star.jpeg' />");
