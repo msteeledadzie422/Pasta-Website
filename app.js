@@ -23,6 +23,7 @@ function ratePage(){
       message = "Sorry, we only accept ratings up to 5, but we appreciate your enthusiasm!";
       alert(message);
     }
+    }
   
 }
 
