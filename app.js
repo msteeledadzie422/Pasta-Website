@@ -1,29 +1,23 @@
-let userName = prompt("What is your name?");
-console.log(userName);
-document.write("Hello " + userName);
-
-function myFunction() {
-  
-  confirm("Click OK if your positive POSITIVE");
-  
+function yourName() {
+      userName = prompt('What is your name?');
+      console.log(userName);
+  return document.write("Hello " + userName);
 }
 
-function ratePage(){
-    let userRating = prompt("How many stars would you rate my page? 1-5");
-    if (userRating<=5 && userRating >=1) {
-      let message = "";
-      message = "Thank you for helping us to improve our service - your rating is appreciated!";
-      alert(message);
-      for (let i = 1; i <= userRating; i++) {
-        document.write("<img class='star-pic' src='star.jpeg' />");
-    }
-      
-    else {
-      message = "Sorry, we only accept ratings up to 5, but we appreciate your enthusiasm!";
-      alert(message);
-    }
-    }
+ function ratePage(){
+  let userRating = prompt("How many stars would you rate my page? Only 1-5");
+  let message = "";
   
-}
+  if(userRating<=5 && userRating>=1){
+    message = "Thank you " + userName;
+    alert(message);
+  
+    for (let rating = 1; rating <= userRating; rating++) {
+      document.write("<img class='star-pic' src='star.jpg' />");
+  }
+    
+  else {
+    message = "Not a valid entry, please enter a number 1-5, thank you!";
+    alert(message);
+  }
 
-ratePage();
