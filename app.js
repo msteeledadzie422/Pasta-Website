@@ -14,10 +14,10 @@ function yourName() {
   
     for (let rating = 1; rating <= userRating; rating++) {
       document.write("<img class='star-pic' src='star.jpg' />");
-  }
-    
-  else {
+          
+    else {
     message = "Not a valid entry, please enter a number 1-5, thank you!";
     alert(message);
+    }
   }
 
