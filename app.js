@@ -26,7 +26,7 @@ function yourName() {
 function myFan() {
   let fantext = ""
   if (confirm("Click OK for more pastas") == true) {
-    fanText = "Congratulations " + userName + ", you are ONE OF US!";
+    fanText = "Congratulations, you are ONE OF US!";
     alert(fanText);
   }
   else {
