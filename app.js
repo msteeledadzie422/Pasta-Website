@@ -13,7 +13,7 @@ function yourName() {
     alert(message);
   let images = ""
     for (let rating = 1; rating <= userRating; rating++) {
-      images += "<img class='star-pic' src='star.jpg' />");
+      images += "<img class='star-pic' src='star.jpeg' />");
     }    
     document.write(images)
    } else {
