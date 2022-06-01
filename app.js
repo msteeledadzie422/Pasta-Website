@@ -23,5 +23,5 @@ function yourName() {
       }
   }
 
-yourName()
+//yourName()
 ratePage()
