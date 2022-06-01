@@ -1,5 +1,5 @@
 function yourName() {
-      userName = prompt('What is your name?');
+      let userName = prompt('What is your name?');
       console.log(userName);
   return document.write("Hello " + userName);
 }
@@ -9,12 +9,13 @@ function yourName() {
   let message = "";
   
   if(userRating<=5 && userRating>=1){
-    message = "Thank you " + userName;
+    message = "Thank you!";
     alert(message);
-  
+  let images = ""
     for (let rating = 1; rating <= userRating; rating++) {
-      document.write("<img class='star-pic' src='star.jpg' />");
+      images += "<img class='star-pic' src='star.jpg' />");
     }    
+    document.write(images)
    } else {
     message = "Not a valid entry, please enter a number 1-5, thank you!";
     alert(message);
