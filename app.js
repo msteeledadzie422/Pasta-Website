@@ -23,5 +23,19 @@ function yourName() {
       }
   }
 
+function myFan() {
+  if (confirm("Click OK for more pastas") == true) {
+    fanText = "Congratulations " + userName + ", you are ONE OF US!";
+    alert(fanText);
+  }
+  else {
+    fanText = "Its ok, nobody is perfect";
+    alert(fanText);
+    myFan();
+  }
+  document.getElementById("pastaFanText").innerHTML = fanText;
+}
+
+
 yourName()
 ratePage()
